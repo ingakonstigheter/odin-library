@@ -1,0 +1,20 @@
+body {
+    text-align: center;
+    display: grid;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.books {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.book {
+    border: 1px solid black;
+    background-color: aliceblue;
+    min-width: 150px;
+}
