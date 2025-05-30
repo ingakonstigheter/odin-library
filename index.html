@@ -10,9 +10,12 @@
         <title>The Library</title>
     </head>
     <body onload="runOnLoad()">
-        <h1>Welcome To The Library</h1>
-        <main>
+        <header>
+            <h1>The Library</h1>
             <button class="btn-showForm" id="btn-showForm" >New Book</button>
+        </header>
+        <main>
+
             <form class="new-book-form" id="new-book-form">
                 <button id="btn-hideForm">X</button>
                 <ul class="user-input">
@@ -24,14 +27,14 @@
                         <label for="author">Author</label
                         ><input type="text" id="author" name="author" />
                     </li>
-
-                    <li>
-                        <label for="pages">Pages</label
-                        ><input type="text" id="pages" name="pages" />
-                    </li>
-                    <li>
-                        <label for="read">I've read this book</label>
+                    <li class="sameRow">
+                        <label for="pages">Nr of Pages
+                        <input type="number" id="pages" name="pages" max="9999" min="1" />
+                        </label>
+                        <label for="read">I've read this book
                         <input type="checkbox" name="read" id="read">
+                        </label>
+                        
                     </li>
                     <li>
                         <input type="submit" id="btn-form-submit"></button>

@@ -51,7 +51,6 @@ function deleteBook(id) {
 }
 
 //  DOM-Edit    //
-
 function displayBook(book) {
     const ul = document.querySelector(".books");
 
@@ -76,10 +75,6 @@ function displayBook(book) {
         updateDisplay();
     });
 
-    const lRead = document.createElement("label");
-    lRead.setAttribute("for", "toggleRead");
-    lRead.textContent = "Toggle read status";
-
     const pRead = document.createElement("p");
     if (book.read) {
         pRead.textContent = "You have read this book";
@@ -97,7 +92,6 @@ function displayBook(book) {
     li.appendChild(pAuthor);
     li.appendChild(pPages);
     li.appendChild(pRead);
-    li.appendChild(lRead);
     li.appendChild(bRead);
     li.appendChild(bDelete);
     ul.appendChild(li);
@@ -142,9 +136,11 @@ function toggleRead(id) {
     }
 }
 function showForm() {
-    document.querySelector("form").style.width = "200px";
+    document.querySelector("form").style.height = "250px";
+    document.querySelector("form").style.width = "500px";
 }
 function hideForm() {
+    document.querySelector("form").style.height = "0";
     document.querySelector("form").style.width = "0";
 }
 function clearForm() {

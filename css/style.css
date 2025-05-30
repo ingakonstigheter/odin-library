@@ -1,8 +1,81 @@
+body {
+    background-color: #FAF6F0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header {
+    text-align: center;
+    padding: 40px;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    max-width: 1400px;
+}
+button {
+    max-width: fit-content;
+    background-color: #DAA520;
+    color: white;
+    border: none;
+    border-radius: 10%;
+}
 form {
     width: 0;
+    height: 0;
     overflow: hidden;
-    height: 100%;
     position: fixed;
-    transition: 0.5s;
-    background-color: rgb(195, 98, 98);
+    display: flex;
+    flex-direction: column;
+    background-color: #F0E8DC;
+}
+
+.new-book-form {
+    border-radius: 10px;
+}
+
+.user-input {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0 16px;
+    gap: 8px;
+}
+
+.user-input > * {
+    display: flex;
+    flex-direction: column;
+}
+
+#btn-hideForm {
+    align-self: flex-end;
+    padding: 4px 8px;
+    font-size: 0.8rem;
+    width: 24px;
+    height: 24px;
+    line-height: 1;
+    border: none;
+    border-radius: 25%;
+}
+.sameRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.books {
+    max-width: 1100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.book {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 16px;
+    background-color: #F0E8DC;
+    border: 2px solid  #8B5E3C;
 }
